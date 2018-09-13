@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Header from '../components/Header/Header';
-import Slider from '../components/Slider/Slider';
+import Carousel from '../components/Carousel/Carousel';
 import Services from '../components/Services/Services';
 import WhyUs from '../components/WhyUs/WhyUs';
 import PopularBarberGrid from '../components/PopularBarbers/PopularBarberGrid';
@@ -16,7 +16,7 @@ class Homepage extends Component {
 		return (
 			<Fragment>
 				<Header />
-				<Slider />
+				<Carousel />
 				<Services />
 				<WhyUs />
 				<PopularBarberGrid />
