@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import {
-    Container,
+import { Container,Image } from "semantic-ui-react";
 
-  } from "semantic-ui-react";
 
 class UserProfile extends Component {
   constructor(props) {
@@ -15,7 +13,13 @@ class UserProfile extends Component {
       <Link to="/userprofile">
         <div>
           <Container>
-            <div>HALOO</div>
+            HALOOOOO
+            <div>
+              <Image
+                src="../../assets/image/abc.png"
+                size="medium"
+              />
+            </div>
           </Container>
         </div>
       </Link>
