@@ -9,44 +9,43 @@ let sourcemaps = require('gulp-sourcemaps');
 let uglify = require('gulp-uglify');
 
 gulp.task('clean', () => {
-  del('./public/dist/js/barbershop-finder.min.js');
+	del('./public/dist/js/barbershop-finder.min.js');
 });
 
 gulp.task('sass', () => {
-  gulp
-    .src('./assets/styles/scss/styles.scss')
-    .pipe(sass())
-    .pipe(sourcemaps.init())
-    .pipe(minify())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./public/dist/styles'));
+	gulp
+		.src('./assets/styles/scss/styles.scss')
+		.pipe(sass())
+		.pipe(sourcemaps.init())
+		.pipe(minify())
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest('./public/dist/styles'));
 });
 
 gulp.task('barber', () => {
-  gulp
-    .src('./assets/styles/barber/barber.scss')
-    .pipe(sass())
-    .pipe(sourcemaps.init())
-    .pipe(minify())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./public/dist/styles'));
+	gulp
+		.src('./assets/styles/barber/barber.scss')
+		.pipe(sass())
+		.pipe(sourcemaps.init())
+		.pipe(minify())
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest('./public/dist/styles'));
 });
 
 gulp.task('watch', () => {
-  gulp.watch('./assets/styles/scss/**/*.scss', ['sass']);
+	gulp.watch('./assets/styles/scss/**/*.scss', [ 'sass' ]);
 });
 
-gulp.task('build:js', ['clean'], () => {
-  gulp
-    .src([
-      './assets/js/vendor/jquery-1.12.4.min.js',
-      './assets/js/vendor/imagesloaded.pkgd.min.js',
-      './assets/js/vendor/owl.carousel.min.js',
-      './assets/js/vendor/smooth-scroll.min.js',
-      './assets/js/vendor/jquery.mb.YTPlayer.min.js',
-      './assets/js/main.js'
-    ])
-    .pipe(concat('barbershop-finder.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('./public/dist/js'));
+gulp.task('build:js', [ 'clean' ], () => {
+	gulp
+		.src([
+			'./assets/js/vendor/jquery-1.12.4.min.js',
+			'./assets/js/vendor/imagesloaded.pkgd.min.js',
+			'./assets/js/vendor/owl.carousel.min.js',
+			'./assets/js/vendor/smooth-scroll.min.js',
+			'./assets/js/main.js'
+		])
+		.pipe(concat('barbershop-finder.min.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('./public/dist/js'));
 });

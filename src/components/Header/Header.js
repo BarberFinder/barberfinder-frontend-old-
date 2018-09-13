@@ -5,7 +5,7 @@ import logoImage from '../../assets/logo.png';
 
 const Header = () => {
 	return (
-		<Menu fixed="top" inverted className="header-navbar">
+		<Menu id="header" fixed="top" inverted className="header-navbar">
 			<Menu.Menu position="left">
 				<Menu.Item className="item-before">
 					<Link to="/">

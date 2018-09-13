@@ -1,7 +1,3 @@
-/*
-	Barber Shop Theme Scripts
-*/
-
 (function($) {
 	'use strict';
 
@@ -30,10 +26,9 @@
 		});
 	});
 	/*=========================================================================
-        Vdeo Background
+         Main Slider
 =========================================================================*/
 	$(document).ready(function() {
-		$('.video_bg').YTPlayer();
 		$('#main-slider').owlCarousel({
 			loop: true,
 			autoplay: true,
@@ -60,10 +55,6 @@
 	});
 
 	/*=========================================================================
-    Main Slider
-=========================================================================*/
-
-	/*=========================================================================
     Gallery Slider
 =========================================================================*/
 
@@ -78,50 +69,11 @@
 	});
 
 	/*=========================================================================
-        Mobile Menu
-=========================================================================*/
-
-	// $(function() {
-	//   $('#mainmenu').slicknav({
-	//     prependTo: '.navbar-right',
-	//     label: '',
-	//     allowParentLinks: true
-	//   });
-	// });
-
-	/*=========================================================================
-    Isotope Active
-=========================================================================*/
-	// $('.portfolio_items').imagesLoaded(function() {
-	//   // Add isotope click function
-	//   $('.gallery_filter li').on('click', function() {
-	//     $('.gallery_filter li').removeClass('active');
-	//     $(this).addClass('active');
-
-	//     var selector = $(this).attr('data-filter');
-	//     $('.portfolio_items').isotope({
-	//       filter: selector,
-	//       animationOptions: {
-	//         duration: 750,
-	//         easing: 'linear',
-	//         queue: false
-	//       }
-	//     });
-	//     return false;
-	//   });
-
-	//   $('.portfolio_items').isotope({
-	//     itemSelector: '.single_item',
-	//     layoutMode: 'fitRows'
-	//   });
-	// });
-
-	/*=========================================================================
         Initialize smoothscroll plugin
 =========================================================================*/
-	// smoothScroll.init({
-	//   offset: 60
-	// });
+	smoothScroll.init({
+		offset: 60
+	});
 
 	/*=========================================================================
         Testimonial Carousel
@@ -161,40 +113,6 @@
 	});
 
 	/*=========================================================================
-        Sponsor Carousel
-=========================================================================*/
-	$('#sponsor_carousel').imagesLoaded(function() {
-		$('#sponsor_carousel').owlCarousel({
-			loop: true,
-			margin: 10,
-			autoplay: true,
-			smartSpeed: 500,
-			nav: false,
-			dots: false,
-			responsive: true,
-			responsive: {
-				0: {
-					items: 2
-				},
-				480: {
-					items: 3
-				},
-				768: {
-					items: 6
-				}
-			}
-		});
-	});
-
-	/*=========================================================================
-        Active venobox
-=========================================================================*/
-	// $('.img_popup').venobox({
-	// 	numeratio: true,
-	// 	infinigall: true
-	// });
-
-	/*=========================================================================
   Scroll To Top
 =========================================================================*/
 
@@ -205,37 +123,4 @@
 			$('#scroll-to-top').fadeOut();
 		}
 	});
-
-	/*=========================================================================
-       MAILCHIMP
-=========================================================================*/
-
-	// if ($('.subscribe_form').length > 0) {
-	// 	/*  MAILCHIMP  */
-	// 	$('.subscribe_form').ajaxChimp({
-	// 		language: 'es',
-	// 		callback: mailchimpCallback,
-	// 		url: '//alexatheme.us14.list-manage.com/subscribe/post?u=48e55a88ece7641124b31a029&amp;id=361ec5b369'
-	// 	});
-	// }
-
-	// function mailchimpCallback(resp) {
-	// 	if (resp.result === 'success') {
-	// 		$('#subscribe-result').addClass('subs-result');
-	// 		$('.subscription-success').text(resp.msg).fadeIn();
-	// 		$('.subscription-error').fadeOut();
-	// 	} else if (resp.result === 'error') {
-	// 		$('#subscribe-result').addClass('subs-result');
-	// 		$('.subscription-error').text(resp.msg).fadeIn();
-	// 	}
-	// }
-	// $.ajaxChimp.translations.es = {
-	// 	submit: 'Submitting...',
-	// 	0: 'We have sent you a confirmation email',
-	// 	1: 'Please enter your email',
-	// 	2: 'An email address must contain a single @',
-	// 	3: 'The domain portion of the email address is invalid (the portion after the @: )',
-	// 	4: 'The username portion of the email address is invalid (the portion before the @: )',
-	// 	5: 'This email address looks fake or invalid. Please enter a real email address'
-	// };
 })(jQuery);
