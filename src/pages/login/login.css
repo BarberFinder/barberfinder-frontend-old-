@@ -1,0 +1,64 @@
+.headerLogin{
+    margin-top: 70px !important;
+    font-size: 45px !important;
+}
+
+
+.gridCol2login{
+    border-left-color: rgb(199, 197, 197);
+    border-left-style: solid;
+    border-width: 1px
+}
+
+.rememberMe{
+    text-align: left;
+
+}
+
+.buttonGoogle{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form1loginpage{
+    padding-left: 150px;
+    padding-right: 50px;
+}
+
+.form2loginpage{
+    padding-top: 50px !important;
+    padding-right: 170px !important;   
+}
+
+.logobton{
+    width: 45px !important;
+}
+
+.logobtongoogle{
+    width: 45px !important;
+    padding-left: 8px !important;
+}
+
+.btonlogogoogle{
+    width: 174.55px
+}
+
+.btonlogin{
+    border-radius: 25px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    font-size: 17px !important;
+}
+
+.TermAndUse{
+    text-align: center;
+    color: #858f96;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-family: HelveticaNeueW01-Thin,HelveticaNeueW02-Thin,HelveticaNeueW10-35Thin,sans-serif
+}
