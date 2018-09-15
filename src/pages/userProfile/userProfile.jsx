@@ -38,15 +38,22 @@ class UserProfile extends Component {
             <Grid.Row>
               <Grid.Column width={4}>
                 <Image src={abc} className="gridavatar" />
-                <br/>
-                <input className="getfoto" type="file" />
               </Grid.Column>
               <Grid.Column width={12}>
                 <div className="grid2coluserprofile divleftuserprofile">
-                  <Header as="h2" className="left">
-                    Muhammad Noor Cahyo
-                    <Divider />
-                  </Header>
+                  <Grid columns={2} padded>
+                    <Grid.Column>
+                      <Header as="h2" className="left">
+                        Muhammad Noor Cahyo
+                      </Header>
+                    </Grid.Column>
+                    <Grid.Column className="settinginform">
+                      <a href="#settingdetail">
+                        <Icon disabled name="setting" size="large" />
+                      </a>
+                    </Grid.Column>
+                  </Grid>
+                  <Divider />
                   <div>
                     <Menu pointing secondary>
                       <Link to={`${this.props.match.url}`}>
@@ -62,7 +69,7 @@ class UserProfile extends Component {
                           path={`${this.props.match.url}`}
                           component={userProfileDetail}
                         />
-                          <Route
+                        <Route
                           path={`${this.props.match.url}/history`}
                           component={UserProfileHistory}
                         />
@@ -76,7 +83,6 @@ class UserProfile extends Component {
                         />{" "}
                         <br />
                       </Link>
-                      
                     </Menu>
                   </div>
                 </div>
