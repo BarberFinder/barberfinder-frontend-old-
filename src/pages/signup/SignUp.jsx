@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 import "./signup.css";
 import Logofb from "../../assets/facebook-logo.svg";
 import Logogoogle from "../../assets/google-logo.svg";
@@ -22,7 +23,7 @@ class SignUp extends Component {
   constructor() {
     super();
     this.state = {
-      user: [{}],
+      user: [],
       input_username: "",
       input_password: "",
       input_firstname: "",
@@ -38,16 +39,18 @@ class SignUp extends Component {
     });
   };
 
-  addUser = () => {
-    let prevUser = this.state.user.slice();
-    prevUser.push({
+  addUser = async () => {
+   await axios
+    .post(`http://localhost:3000/signup`,{
       username: this.state.input_username,
       password: this.state.input_password,
       firstname: this.state.input_firstname,
       lastname: this.state.input_lastname,
       email: this.state.input_email,
       phone: this.state.input_phone
-    });
+    })
+    .then(res => console.log(res));
+    //getAll
   };
 
   render() {
