@@ -22,16 +22,6 @@ gulp.task('sass', () => {
 		.pipe(gulp.dest('./public/dist/styles'));
 });
 
-gulp.task('barber', () => {
-	gulp
-		.src('./assets/styles/barber/barber.scss')
-		.pipe(sass())
-		.pipe(sourcemaps.init())
-		.pipe(minify())
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('./public/dist/styles'));
-});
-
 gulp.task('watch', () => {
 	gulp.watch('./assets/styles/scss/**/*.scss', [ 'sass' ]);
 });
@@ -41,7 +31,6 @@ gulp.task('build:js', [ 'clean' ], () => {
 		.src([
 			'./assets/js/vendor/jquery-1.12.4.min.js',
 			'./assets/js/vendor/imagesloaded.pkgd.min.js',
-			'./assets/js/vendor/owl.carousel.min.js',
 			'./assets/js/vendor/smooth-scroll.min.js',
 			'./assets/js/main.js'
 		])

@@ -19,7 +19,7 @@ const Header = () => {
 						<Button inverted>Login</Button>
 					</Link>
 					<Link className="item-before " to="/register">
-						<Button inverted>Register</Button>
+						<Button inverted>Sign Up</Button>
 					</Link>
 				</Menu.Item>
 			</Menu.Menu>

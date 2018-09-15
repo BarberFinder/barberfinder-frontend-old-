@@ -11,7 +11,11 @@
     "react-scripts": "1.1.5",
     "semantic-ui": "^2.3.3",
     "semantic-ui-css": "^2.3.3",
-    "semantic-ui-react": "^0.82.4"
+    "semantic-ui-react": "^0.82.4",
+  	"nuka-carousel": "^4.3.10",
+		"react-bootstrap": "^0.32.4",
+		"react-slick": "^0.23.1",
+		"slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,4 +32,3 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1"
   }
-}
