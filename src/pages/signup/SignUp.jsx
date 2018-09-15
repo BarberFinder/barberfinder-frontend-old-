@@ -145,10 +145,11 @@ class SignUp extends Component {
                     <Divider />
                   </Form.Field>
                   <Container textAlign="left">
-                    <Button inverted 
-                    color="blue" 
-                    className="btonsignup"
-                    onClick={() => this.addUser()}
+                    <Button
+                      inverted
+                      color="blue"
+                      className="btonsignup"
+                      onClick={() => this.addUser()}
                     >
                       Sign Up
                     </Button>
