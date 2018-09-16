@@ -1,18 +1,22 @@
-.headerLogin{
+.headerSignup{
     margin-top: 70px !important;
     font-size: 45px !important;
 }
 
 
-.gridCol2login{
+.gridCol2Signup{
     border-left-color: rgb(199, 197, 197);
     border-left-style: solid;
     border-width: 1px
 }
 
-.rememberMe{
-    text-align: left;
+.firstnameSU{
+    padding-left: 0px !important;
+}
 
+.lastnameSU{
+    padding-left: 30px !important;
+    padding-right: 0px !important;
 }
 
 .buttonGoogle{
@@ -23,13 +27,13 @@
     flex-wrap: wrap;
 }
 
-.form1loginpage{
+.form1Signuppage{
     padding-left: 150px;
     padding-right: 50px;
 }
 
-.form2loginpage{
-    padding-top: 50px !important;
+.form2Signuppage{
+    padding-top: 90px !important;
     padding-right: 170px !important;   
 }
 
