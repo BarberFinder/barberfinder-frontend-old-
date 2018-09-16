@@ -1,0 +1,40 @@
+.settinginform{
+    text-align: right;
+}
+
+.containerprofile{
+margin-top: 120px;
+}
+
+.gridavatar{
+    width: 290.5px;
+    height: 230px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.left{
+    text-align: left !important;
+}
+
+.grid2coluserprofile{
+    border-left-color: rgb(199, 197, 197);
+    border-left-style: solid;
+    border-right-color: rgb(199, 197, 197);
+    border-right-style: solid;
+    border-width: 1px;
+}
+
+.divleftuserprofile{
+    padding-right: 30px !important;  
+    padding-left: 20px !important;  
+}
+
+.btonsetting{
+    padding-left: 5px;
+}
+
+.menuprofile{
+    width: 300px;
+}
